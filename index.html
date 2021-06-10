@@ -1,36 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
     <main>
-        <h1>Forms playground</h1>
-        <form>
-            <p>
-                <label for="firstName">Your name:</label>
-                <input id="firstName" name="firstName">  
-            </p>
+      <h1>Forms playground</h1>
+      <form  action="https://dev.cotenfrontend.pl" class="form">
+        <p>
+          <label for="firstName">Your name:</label>
+          <input
+            class="form__item"
+            id="firstName"
+            name="firstName"
+            placeholder="Please enter your name"
+          />
+        </p>
 
-            <p>
-                <label for="lastName">Your last name:</label>
-                <input id="lastName" name="lastName" placeholder="Please enter your last name">  
-            </p>
+        <p>
+          <label for="lastName">Your last name:</label>
+          <input
+            class="form__item"
+            id="lastName"
+            name="lastName"
+            placeholder="Please enter your last name"
+          />
+        </p>
 
-            <p>
-                <label>Your last name:
-                <input id="lastName" name="lastName" value="hejo hejo ;)">
+        <p>
+          <label
+            >Your last name:
+            <input
+              class="form__item"
+              id="lastName"
+              name="lastName"
+              value="hejo hejo ;)"
+            />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Phone number:
+            <input
+              class="form__item"
+              id="phoneNumber"
+              placeholder="Please enter your phone number"
+              name="phoneNumber"
+              type="tel"
+            />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Your favourite number:
+            <input
+              class="form__item"
+              id="favouriteNumber"
+              placeholder="Please enter your favourite number"
+              name="favouriteNumber"
+              type="number"
+            />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >E-mail:
+            <input
+              class="form__item"
+              id="email"
+              placeholder="Please enter your E-mail"
+              name="email"
+              type="email"
+            />
+          </label>
+        </p>
+        <p>
+          <label
+            >Password:
+            <input
+              class="form__item"
+              id="password"
+              placeholder="Please enter your password"
+              name="password"
+              type="password"
+            />
+          </label>
+        </p>
+
+        <p>
+          <label
+            >Avatar:
+            <input class="form__item" id="avatar" name="avatar" type="file" />
+          </label>
+        </p>
+        <p>
+          <label class="label__upper" for="radio-station"
+            >Pick one radio station:</label
+          >
+          <select id="radio-station">
+            <option value="radio-station-1">RMF FM</option>
+            <option value="radio-station-2">RMF Maxxx</option>
+            <option value="radio-station-3">Eska</option>
+            <option value="radio-station-4">Radiostacja</option>
+            <option value="radio-station-5">Radio ZET</option>
+          </select>
+        </p>
+
+        <p>
+          <label class="label__upper" for="yourStory">Your story: </label>
+          <textarea class="form__textarea" id="yourStory" name="yourStory">
+My story is...</textarea
+          >
+        </p>
+
+        <p>
+          <label
+            >Experience:
+            <input
+              class="form__item"
+              id="experience"
+              name="experience"
+              type="range"
+              min="0"
+              max="100"
+              step="10"
+            />
+          </label>
+        </p>
+
+        <fieldset>
+          <legend>Adress</legend>
+          <p>
+            <label
+              >Street name:
+              <input
+                class="form__item"
+                id="streetName"
+                name="streetName"
+                placeholder="Please enter your street name"
+              />
             </label>
-            </p>
-        </form>
+          </p>
+          <p>
+            <label
+              >City:
+              <input
+                class="form__item"
+                id="city"
+                name="city"
+                placeholder="Please enter your city"
+              />
+            </label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Favourite icecream flavour</legend>
+          <p>
+            <label>
+              <input name="iceCream" checked type="radio" value="chocolate" />
+              Chocolate
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="iceCream" type="radio" value="strawberry" />
+              Strawberry
+            </label>
+          </p>
+          <p>
+            <label>
+              <input name="iceCream" type="radio" value="lemon" /> Lemon
+            </label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label>
+            <input name="agreement" checked type="checkbox" value="agree" /> I
+            agree
+          </label>
+        </p>
+
+        <p>
+          <label> <input type="submit" value="send" /></label>
+        </p>
+      </form>
     </main>
-    
-    
-</body>
+  </body>
 </html>
-
-
