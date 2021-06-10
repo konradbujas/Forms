@@ -10,10 +10,12 @@
   <body>
     <main>
       <h1>Forms playground</h1>
-      <form  action="https://dev.cotenfrontend.pl" class="form">
+      <form method="post" action="https://dev.cotenfrontend.pl" class="form">
+
         <p>
           <label for="firstName">Your name:</label>
           <input
+          required
             class="form__item"
             id="firstName"
             name="firstName"
@@ -73,6 +75,7 @@
           <label
             >E-mail:
             <input
+            required
               class="form__item"
               id="email"
               placeholder="Please enter your E-mail"
@@ -104,7 +107,7 @@
           <label class="label__upper" for="radio-station"
             >Pick one radio station:</label
           >
-          <select id="radio-station">
+          <select name="radio-station" id="radio-station">
             <option value="radio-station-1">RMF FM</option>
             <option value="radio-station-2">RMF Maxxx</option>
             <option value="radio-station-3">Eska</option>
@@ -114,10 +117,11 @@
         </p>
 
         <p>
-          <label class="label__upper" for="yourStory">Your story: </label>
+          <label class="label__upper" for="yourStory">
+            Your story: 
+          </label>
           <textarea class="form__textarea" id="yourStory" name="yourStory">
-My story is...</textarea
-          >
+My story is...</textarea>
         </p>
 
         <p>
@@ -156,6 +160,19 @@ My story is...</textarea
                 id="city"
                 name="city"
                 placeholder="Please enter your city"
+              />
+            </label>
+          </p>
+
+          <p>
+            <label
+              >Postal code:
+              <input
+                
+                id="postalCode"
+                name="postalCode"
+                pattern = "[0-9]{2}-[0-9]{3}"
+                placeholder="12-123"
               />
             </label>
           </p>
